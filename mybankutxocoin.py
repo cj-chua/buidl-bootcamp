@@ -43,6 +43,7 @@ class Bank:
     
     def __init__(self):
         # bank knows of all the transactions out there
+        # (tx_id,index) -> tx_out
         self.utxo = {}
 
     def update_utxo(self, tx):
